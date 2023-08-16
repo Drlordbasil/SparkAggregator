@@ -1,0 +1,9 @@
+Based on the given Python program, the package requirements are:
+
+- requests
+- bs4 (BeautifulSoup)
+- pandas
+- sklearn (specifically feature_extraction.text from sklearn)
+- sklearn (specifically cluster from sklearn)
+- datetime
+- openai
