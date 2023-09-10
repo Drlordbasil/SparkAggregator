@@ -92,7 +92,8 @@ class WebScraper:
             response = requests.get(url)
             soup = BeautifulSoup(response.text, 'html.parser')
             search_results = soup.find_all('a')
-            new_urls.extend([result['href'] for result in search_results if result.get('href')])
+            new_urls.extend([result['href']
+                            for result in search_results if result.get('href')])
 
         unique_urls = set(new_urls)
         for url in unique_urls:
